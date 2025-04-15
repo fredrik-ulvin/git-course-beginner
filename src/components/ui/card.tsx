@@ -17,6 +17,8 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
 
 function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
+<>
+<span>Let's rebase</span>
     <div
       data-slot="card-header"
       className={cn(
@@ -25,6 +27,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
       )}
       {...props}
     />
+</>
   )
 }
 
